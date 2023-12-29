@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+        }
+
+        header, section, footer {
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #6a0572;
+            color: #fff;
+            text-align: center;
+        }
+
+        section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .collage-item {
+            width: calc(33.33% - 20px);
+            margin: 10px;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .collage-item:hover {
+            transform: rotate(5deg) scale(1.1);
+        }
+
+        .collage-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .collage-item:hover img {
+            transform: scale(1.1);
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+        }
+
+        footer {
+            background-color: #6a0572;
+            color: #fff;
+            text-align: center;
+        }
+    </style>
+    <title>Sushrita Rakshit - About Me</title>
+</head>
+<body>
+    <header>
+        <h1 class="typewriter">Sushrita Rakshit</h1>
+        <p>Email: sushrita@umich.edu | Mobile: (586) 224-7597</p>
+        <nav>
+            <a href="/index.html" class="typewriter-link">Back to Home</a>
+        </nav>
+    </header>
+    
+    <section id="linkedin">
+        <h2><i class="fas fa-link"></i> A Bit About Me </h2>
+        <p class="linkedin-paragraph">
+            Hey there! 👋🏼 My name is Sushrita Rakshit, and I am a junior at the University of Michigan studying Computer Science with a minor in statistics. My interests involve NLP and ML in medicine, and I will be pursuing a PhD (ideally) after graduation from undergrad in one of these fields.
+            <br><br>
+            🌟 I've dabbled in Parrot libraries and NLTK to build some of my own text processors! I'm currently seeking Summer 2024 internships or even research experience for software-related roles (bonus if they're ML/DL related!) and am always open to new opportunities through a single message. 😊
+        </p>
+    </section>
+
+    <section id="hobbies">
+        <h2><i class="fas fa-heart"></i> Hobbies</h2>
+        <ul style="list-style-type: disc;">
+            <li>Baking 🍰</li>
+            <li>Cooking 🍳</li>
+            <li>Pen-palling in Spanish 📝</li>
+            <li>Reading Books 📚 (Fun Fact: I have a spreadsheet of 751 books that I've read since COVID, each ranked by different categories like character development, character resonance, language, etc.)</li>
+            <li>I'm a diehard Salman Rushdie fan!!!</li>
+            <li>Reading Spanish Literature 📖</li>
+        </ul>
+    </section>
+    
+
+    <!-- Collage items start here -->
+    <section id="picss">
+        <div class="collage-item">
+            <img src="/pictures/diary.jpg" alt="Image 1">
+        </div>
+    
+        <div class="collage-item">
+            <img src="/pictures/books.jpeg" alt="Image 2">
+        </div>
+
+        <div class="collage-item">
+            <img src="/pictures/cupcakes.jpeg" alt="Image 3">
+        </div>
+
+        <div class="collage-item">
+            <img src="/pictures/rushdie.jpeg" alt="Image 4">
+        </div>
+
+        <div class="collage-item">
+            <img src="/pictures/french.jpeg" alt="Image 5">
+        </div>
+        
+        <div class="collage-item">
+            <img src="/pictures/pizza.jpeg" alt="Image 6">
+        </div>
+    
+        <!-- Add more collage items as needed -->
+
+    </section>
+    <br>
+    <br>
+
+    <footer>
+        <p>&copy; 2023 Sushrita Rakshit</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,226 @@
+/* Add this line to the beginning of your style.css file */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Additional styling for better readability */
+header, section, footer {
+    margin: 20px;
+}
+
+section {
+    line-height: 1.6;
+}
+
+body, h1, h2, h3, p, ul, li {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+p, li {
+    font-size: 16px;
+}
+
+header {
+    background-color: #6a0572;
+    color: #fff;
+    text-align: center;
+    padding: 8vw; /* 8% of viewport width for padding */
+    overflow: hidden;
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid #fff; /* Adjust the color and thickness of the cursor */
+    margin: 0;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.typewriter-link {
+    color: #fff; /* Adjust the color as needed */
+    text-decoration: none;
+    display: inline-block;
+    overflow: hidden;
+    border-right: 0.15em solid #fff; /* Adjust the color and thickness of the cursor */
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: calc(100% + 0.15em); }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
+}
+
+header {
+    background-color: #6a0572;
+    color: #fff;
+    text-align: center;
+    padding: 8vw; /* 8% of viewport width for padding */
+    overflow: hidden;
+}
+
+/* Add this to your style.css file */
+.profile-picture {
+    border-radius: 50%; /* Creates a circular border */
+    max-width: 100px; /* Adjust the maximum width as needed */
+    height: auto; /* Maintains the aspect ratio */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+
+.small-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.typewriter {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    margin: 0;
+}
+
+.typewriter h1,
+.typewriter nav a,
+.typewriter-link {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.15em solid #fff; /* Adjust the color and thickness of the cursor */
+    margin: 0;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: calc(100% + 0.15em); }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #fff; }
+}
+
+
+
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2e8ff;
+    color: #333;
+}
+
+header, section, footer {
+    max-width: 80vw; /* 80% of viewport width */
+    margin: 0 auto;
+    padding: 5vw; /* 5% of viewport width */
+    background-color: #fff;
+    border-radius: 2vw; /* 2% of viewport width for rounded corners */
+    box-shadow: 0 0 2vw rgba(0, 0, 0, 0.1); /* 2% of viewport width for box shadow */
+}
+
+header {
+    background-color: #6a0572;
+    color: #fff;
+    text-align: center;
+    padding: 8vw; /* 8% of viewport width for padding */
+}
+
+h1 {
+    margin: 0;
+    font-weight: 700;
+}
+
+
+
+section {
+    margin-top: 5vh; /* 5% of viewport height */
+}
+
+footer {
+    background-color: #6a0572;
+    color: #fff;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    padding: 10px 0; /* Smaller padding for the footer */
+    left: 50%;
+    transform: translateX(-50%); /* Center the footer horizontally */
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6a0572;
+    margin: 0 3vw; /* 3% of viewport width for margin */
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #40104a;
+}
+
+nav a.active {
+    font-weight: bold;
+    color: #40104a;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 600px) {
+    header, section, footer {
+        max-width: 90vw; /* Adjust the max-width for smaller screens */
+        padding: 8px;
+    }
+
+    h1 {
+        font-size: 1.5em;
+    }
+}
+
+/* Add styling for Tic Tac Toe cells */
+#tic-tac-toe .cell {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 100px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#tic-tac-toe .cell:hover {
+    background-color: #f0f0f0;
+}
+
+/* Ensure cells are arranged in a 3x3 grid with reduced gap */
+#tic-tac-toe #board {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px; /* Adjust the gap value as needed */
+}
+
+#tic-tac-toe .cell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
