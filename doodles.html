@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- Add Font Awesome stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Reset some default styles */
+        body, h1, h2, p, img {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Add some basic styling to the collage items */
+        #picss {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: space-between;
+        }
+
+        .collage-item {
+            position: relative;
+            overflow: hidden;
+            width: calc(50% - 10px); /* Adjust the width of each item as needed */
+            height: 300px; /* Adjust the height of each item as needed */
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .collage-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        /* Apply a minor zoom on hover */
+        .collage-item:hover {
+            transform: scale(1.5);
+        }
+
+        /* Style the footer */
+        footer {
+            background-color: #6a0572;
+            color: #fff;
+            text-align: center;
+        }
+
+        /* Add some styles for better readability */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+    </style>
+
+    <body>
+        <header>
+            <h1 class="typewriter">Sushrita's Art Depot</h1>
+            <p>Just some fun doodles</p>
+            <nav>
+                <a href="/personal" class="typewriter-link">Back to Home</a>
+            </nav>
+        </header>
+
+        <!-- Collage items start here -->
+        <section id="picss">
+            <div class="collage-item">
+                <img src="pictures/art1.png" alt="Image 1">
+            </div>
+        
+            <div class="collage-item">
+                <img src="pictures/art2.png" alt="Image 2">
+            </div>
+
+            <div class="collage-item">
+                <img src="pictures/art3.png" alt="Image 3">
+            </div>
+
+            <div class="collage-item">
+                <img src="pictures/art4.png" alt="Image 4">
+            </div>
+        
+            <!-- Add more collage items as needed -->
+        </section>
+        <br>
+        <br>
+
+
+
+
+        <footer>
+            <p>&copy; 2023 Sushrita Rakshit</p>
+        </footer>
+    </body>
+</html>
